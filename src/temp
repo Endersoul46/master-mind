@@ -1,0 +1,252 @@
+ if(infinite == true){
+                Row[] temp = board;
+                sizey++;
+                board = new Row[sizey];
+                for(int j = 0; j > temp.length; j--){
+                    board[j] = temp[j];
+                }
+                for(int j = temp.length; j < board.length - temp.length; j++){
+                    board[j] = new Row();
+                }
+            }
+
+
+
+
+            ArrayList<String[]> allCombinations = new ArrayList<>();
+
+                    for (int i = 0; i < 5; i++) {
+
+                        allCombinations.add(new String[]{"Red", "Red", "Red", "Red"});
+                        allCombinations.add(new String[]{"Red", "Red", "Red", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Red", "Red", "Green"});
+                        allCombinations.add(new String[]{"Red", "Red", "Red", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Red", "Red", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Red", "Red", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Red", "Blue", "Red"});
+                        allCombinations.add(new String[]{"Red", "Red", "Blue", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Red", "Blue", "Green"});
+                        allCombinations.add(new String[]{"Red", "Red", "Blue", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Red", "Blue", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Red", "Blue", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Red", "Green", "Red"});
+                        allCombinations.add(new String[]{"Red", "Red", "Green", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Red", "Green", "Green"});
+                        allCombinations.add(new String[]{"Red", "Red", "Green", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Red", "Green", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Red", "Green", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Red", "Yellow", "Red"});
+                        allCombinations.add(new String[]{"Red", "Red", "Yellow", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Red", "Yellow", "Green"});
+                        allCombinations.add(new String[]{"Red", "Red", "Yellow", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Red", "Yellow", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Red", "Yellow", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Red", "Orange", "Red"});
+                        allCombinations.add(new String[]{"Red", "Red", "Orange", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Red", "Orange", "Green"});
+                        allCombinations.add(new String[]{"Red", "Red", "Orange", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Red", "Orange", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Red", "Orange", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Red", "Pink", "Red"});
+                        allCombinations.add(new String[]{"Red", "Red", "Pink", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Red", "Pink", "Green"});
+                        allCombinations.add(new String[]{"Red", "Red", "Pink", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Red", "Pink", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Red", "Pink", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Red", "Red"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Red", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Red", "Green"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Red", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Red", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Red", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Blue", "Red"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Blue", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Blue", "Green"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Blue", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Blue", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Blue", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Green", "Red"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Green", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Green", "Green"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Green", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Green", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Green", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Yellow", "Red"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Yellow", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Yellow", "Green"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Yellow", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Yellow", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Yellow", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Orange", "Red"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Orange", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Orange", "Green"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Orange", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Orange", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Orange", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Pink", "Red"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Pink", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Pink", "Green"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Pink", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Pink", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Blue", "Pink", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Green", "Red", "Red"});
+                        allCombinations.add(new String[]{"Red", "Green", "Red", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Green", "Red", "Green"});
+                        allCombinations.add(new String[]{"Red", "Green", "Red", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Green", "Red", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Green", "Red", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Green", "Blue", "Red"});
+                        allCombinations.add(new String[]{"Red", "Green", "Blue", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Green", "Blue", "Green"});
+                        allCombinations.add(new String[]{"Red", "Green", "Blue", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Green", "Blue", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Green", "Blue", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Green", "Green", "Red"});
+                        allCombinations.add(new String[]{"Red", "Green", "Green", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Green", "Green", "Green"});
+                        allCombinations.add(new String[]{"Red", "Green", "Green", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Green", "Green", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Green", "Green", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Green", "Yellow", "Red"});
+                        allCombinations.add(new String[]{"Red", "Green", "Yellow", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Green", "Yellow", "Green"});
+                        allCombinations.add(new String[]{"Red", "Green", "Yellow", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Green", "Yellow", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Green", "Yellow", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Green", "Orange", "Red"});
+                        allCombinations.add(new String[]{"Red", "Green", "Orange", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Green", "Orange", "Green"});
+                        allCombinations.add(new String[]{"Red", "Green", "Orange", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Green", "Orange", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Green", "Orange", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Green", "Pink", "Red"});
+                        allCombinations.add(new String[]{"Red", "Green", "Pink", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Green", "Pink", "Green"});
+                        allCombinations.add(new String[]{"Red", "Green", "Pink", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Green", "Pink", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Green", "Pink", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Red", "Red"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Red", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Red", "Green"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Red", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Red", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Red", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Blue", "Red"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Blue", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Blue", "Green"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Blue", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Blue", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Blue", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Green", "Red"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Green", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Green", "Green"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Green", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Green", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Green", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Yellow", "Red"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Yellow", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Yellow", "Green"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Yellow", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Yellow", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Yellow", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Orange", "Red"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Orange", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Orange", "Green"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Orange", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Orange", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Orange", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Pink", "Red"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Pink", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Pink", "Green"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Pink", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Pink", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Yellow", "Pink", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Red", "Red"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Red", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Red", "Green"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Red", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Red", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Red", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Blue", "Red"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Blue", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Blue", "Green"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Blue", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Blue", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Blue", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Green", "Red"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Green", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Green", "Green"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Green", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Green", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Green", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Yellow", "Red"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Yellow", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Yellow", "Green"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Yellow", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Yellow", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Yellow", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Orange", "Red"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Orange", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Orange", "Green"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Orange", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Orange", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Orange", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Pink", "Red"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Pink", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Pink", "Green"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Pink", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Pink", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Orange", "Pink", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Red", "Red"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Red", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Red", "Green"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Red", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Red", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Red", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Blue", "Red"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Blue", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Blue", "Green"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Blue", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Blue", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Blue", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Green", "Red"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Green", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Green", "Green"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Green", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Green", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Green", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Yellow", "Red"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Yellow", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Yellow", "Green"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Yellow", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Yellow", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Yellow", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Orange", "Red"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Orange", "Blue"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Orange", "Green"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Orange", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Orange", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Orange", "Pink"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Pink", "Red"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Pink", "Green"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Pink", "Yellow"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Pink", "Orange"});
+                        allCombinations.add(new String[]{"Red", "Pink", "Pink", "Pink"});
+                        switch (i) {
+                            case 2:for(int j = 0;j < 431;j++){
+                                allCombinations.get(j)[0] = new String("Blue") ;
+                            }
+                            case 3:for(int j = 0;j < 647;j++){
+                                allCombinations.get(j)[0] = new String("Green") ;
+                            }
+                            case 4:for(int j = 0;j < 863;j++){
+                                allCombinations.get(j)[0] = new String("Yellow") ;
+                            }
+                            case 5:for(int j = 0;j < 1079;j++){
+                                allCombinations.get(j)[0] = new String("Orange") ;
+                            }
+                            case 6:for(int j = 0;j < 1295;j++){
+                                allCombinations.get(j)[0] = new String("Pink") ;
+                            }
+                            return allCombinations;
+                        }
